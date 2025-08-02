@@ -1,0 +1,13 @@
+Issues Found:
+name.toUpperCase() crashed app due to name being undefined.
+
+name was not passed from App to Profile.
+
+useState() for name was initialized with undefined.
+
+ Fixes Applied:
+Initialized name with empty string (useState(""))
+
+Passed name to <Profile name={name} age={age} />
+
+Used conditional rendering to prevent crash if name is falsy.
